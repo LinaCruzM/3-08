@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    font-size: large;
+    background-color: lavenderblush;
+}
+caption{
+    font-size: 25px;
+    border: 2px solid black;
+    background-color: palevioletred;
+    
+}
+table{
+    margin-left: 250px;
+    text-align: center;
+    width: 1500px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+thead tr, th{
+    background-color: pink;
+    border: 2px solid black;
+}
+tbody td{
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+
+tfoot tr, td{
+    background-color: palevioletred;
+    text-align: center;
+}

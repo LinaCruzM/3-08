@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="dataForm" method="post" action="./backend/receiver.php">
+        <fieldset>
+            <label for="name">Datos personales: </label>
+            <input type="text"
+            id="name"
+            name="name"
+            placeholder="Introduce tu nombre: "
+            minlength="3"
+            maxlength="50"
+            title="Introduce al menos 3 caracteres máximo 50"
+            tabindex="0"
+            autofocus="true"
+            autocomplete="off"
+            required
+            ><br><br>
+            <select id="typeDocument" name="typeDocument">
+                <option value="nada" select="selected" >Seleccione un tipo de documento</option>
+                <option value="cc">Cédula de ciudadanía</option>
+                <option value="ti">Tarjeta de identidad</option>
+                <option value="ce">Cédula extranjera</option>
+            </select><br>
+            <label for="document">N°. documento</label>
+            <input type="number" 
+            id="document" 
+            name="document" 
+            placeholder="Introduce tu documento de identidad"
+            min="2"
+            max="99"
+            tabindex="1"> <br>
+            <label for="estadoCivil">Estado civil: </label>
+            <input type="radio" name="eCivil" id="eCivil" value="soltero">Soltero(a)
+            <input type="radio" name="eCivil" id="eCivil" value="casado">Casado(a)
+            <input type="radio" name="eCivil" id="eCivil" value="divor">Divorciado(a)
+            <input type="radio" name="eCivil" id="eCivil" value="viudo">Viudo(a)
+            <br>
+            <lable for="numerocelular">Número de teléfono:</lable>
+            <input type="tel" nam="celular" id="ceular" >
+            <br>
+        </fieldset>
+        <!--Radio buton redondos y solo se puede seleccionar uno, check box cuadrados y se pueden elegir varios-->
+        <fieldset><legend>Información de estudio y otros:</legend>
+        <label for="colores">Color favorito:</label>
+        <input type="color" id="colores">
+        <label for="dateInsc">Fecha de inscripción</label>
+        <input type="date" id="dateInsc" name="dateInsc">
+        <label for="hora">Hora de inscripción</label>
+        <input type="time" name="hora" id="hora" value="hora"> <br>
+        <label for="semana">Semana de inscripción:</label>
+        <input type="week" name="semana" id="semana" value="semana"> <br>
+        <label for="link">Ingrese link de la confirmación de inscripción:</label>
+        <input type="url" name="link" id="url" ><br>
+        <label for="correo">Escriba su email:</label>
+        <input type="textarea" name="correo" id="correo"> <br>
+        <label for="documentFile">Cargue los documentos de requisitos:</label>
+        <input type="file" id="documentFile" name="documentFile"> 
+        </fieldset>
+        <br>
+        <label for="lenguajes">Lenguajes de programación:</label>
+        <select id="lenguajes" name="lenguajes">
+            <optgroup label="lenguajes Tipados">
+                <option value="java">Java</option>
+                <option value="cSharp">C#</option>
+                <option value="c">C++</option>
+            </optgroup>
+            <optgroup label="lenguajes No Tipados">
+                <option value="python">Python</option>
+                <option value="js">JavaScript</option>
+            </optgroup>
+        </select><br>
+        <label for="gradodesatisfacción">Grado de satisfacción con esta página:</label>
+        <input type="range" name="Grado de satisfacción" id="satisfaccion">
+        <label for="acepta">¿Acepta términos y condiciones?</label>
+        <input type="checkbox" id="terminos">
+        <input type="submit" value="Enviar"> <!--Php-->
+        <button id="validar">Validar</button> <!--Js-->
+    <script src="./script/main.js"></script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/*
+1. Selector por etiqueta: Cambia el estilo a todas las etiquetas en cuestión, se coloca directamente
+el nombre de la etiqueta.
+2. Selector por clase: Cambia o modifica el estilo del elemento en donde se mencione la clase 
+(Atributo Class), para crear un estilo por clase se coloca .nombreEstilo .
+3. Selector por identificador (Id): Modifica el estilo del elemento que posea el id.
+4. Selector universal ( * )  
+*/
+/*****************************************************************************/
+/* 1. */
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20x;
+    background-color: lavenderblush;
+}
+/* 2. */   
+.subtitulo{
+    text-align: center;
+    color: white;
+    background-color: pink;
+}
+/* 3. */
+#info{
+    border-radius: 5px;
+    background-color: pink;
+    color: gray;
+    padding: 10px;
+}
